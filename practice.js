@@ -58,34 +58,34 @@ Set the value of that key to 'chapstick'.
 Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
-//   //Code here
-//    var backPack = {};
+  //Code here
+   var backPack = {};
 
-//    var item = "firstPocket";
+   var item = "firstPocket";
 
-//    //backpack = new Object({item: "chapstick"});
-//    backpack[item] = "chapstick";
-//    backpack.color = "grey";
+   //backpack = new Object({item: "chapstick"});
+   backPack[item] = "chapstick";
+   backPack.color = "grey";
 
-//   //After you do the above, alert your entire backPack object.
+  //After you do the above, alert your entire backPack object.
 
-//   //Code here
-//   for(var prop in backPack) {
-//         if(backpack.hasOwnProperty(prop)) {
-//            alert(prop + " = " + backpack[prop]);
-//         }
-//   }
+  //Code here
+  for(var prop in backPack) {
+      if(backPack.hasOwnProperty(prop)) {
+         alert(prop + " = " + backPack[prop]);
+      }
+  }
 
-// /*You probably noticed that it just alerted [object Object].
-// Alerting to see the data in your Object doesn't work so well.
-// Instead, console.log your whole backPack object and then check out the console. */
+/*You probably noticed that it just alerted [object Object].
+Alerting to see the data in your Object doesn't work so well.
+Instead, console.log your whole backPack object and then check out the console. */
 
-//   //Code here
-//   for(var prop in backPack) {
-//         if(backpack.hasOwnProperty(prop)) {
-//            console.log(prop + " = " + backpack[prop]);
-//         }
-//   }
+  //Code here
+  for(var prop in backPack) {
+        if(backPack.hasOwnProperty(prop)) {
+           console.log(prop + " = " + backPack[prop]);
+        }
+  }
 
 
 
@@ -320,15 +320,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
   function bindCard(person, creditcard) {
     var mergedObject = {};
 
-    // for(var prop in person) {
-    //   mergedObject = new Object ({
-    //     person[prop]: person[prop];
-    //   });
-    // }
+    for(var prop in person) {
+       mergedObject[prop] = person[prop];
+    }
 
-    // for(var prop in creditcard) {
-    //   mergedObject.creditcard[prop] = creditcard[prop];
-    // }
+    for(var prop in creditcard) {
+       mergedObject[prop] = creditcard[prop];
+    }
 
     //mergedObject.person[prop] = person[prop];
 
